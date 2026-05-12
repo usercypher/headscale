@@ -36,6 +36,7 @@ database:
 
 dns:
   override_local_dns: false
+  magic_dns: false
 
 log:
   format: text
