@@ -35,8 +35,7 @@ database:
     max_idle_conns: 5
 
 dns:
-  magic_dns: true
-  base_domain: headscale.local
+  override_local_dns: false
 
 log:
   format: text
