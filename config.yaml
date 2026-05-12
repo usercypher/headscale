@@ -25,14 +25,7 @@ ephemeral_node_inactivity_timeout: 30m
 database:
   type: postgres
   postgres:
-    host: ep-wild-thunder-aqrnakjz-pooler.c-8.us-east-1.aws.neon.tech
-    port: 5432
-    name: neondb
-    user: neondb_owner
-    pass: npg_AYhuKTSy3Fr2
-    ssl: true
-    max_open_conns: 10
-    max_idle_conns: 5
+    dsn: "postgres://neondb_owner:npg_AYhuKTSy3Fr2@ep-wild-thunder-aqrnakjz-pooler.c-8.us-east-1.aws.neon.tech/neondb?sslmode=require&connect_timeout=10"
 
 dns:
   override_local_dns: false
